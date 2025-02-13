@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <pointsize>12</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>简单记账本</string>
+  </property>
+  <widget class="QWidget" name="centralWidget"/>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>记账</string>
+    </property>
+    <addaction name="action_overview"/>
+    <addaction name="separator"/>
+    <addaction name="action_charge"/>
+    <addaction name="separator"/>
+    <addaction name="action_flow"/>
+    <addaction name="action_report"/>
+   </widget>
+   <widget class="QMenu" name="menu_2">
+    <property name="title">
+     <string>设置</string>
+    </property>
+    <addaction name="action_classification_setting_out"/>
+    <addaction name="action_classification_setting_in"/>
+    <addaction name="separator"/>
+    <addaction name="action_account_setting"/>
+    <addaction name="separator"/>
+    <addaction name="action_pwd_setting"/>
+   </widget>
+   <addaction name="menu"/>
+   <addaction name="menu_2"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="action_charge"/>
+  </widget>
+  <action name="action_overview">
+   <property name="text">
+    <string>财务概况</string>
+   </property>
+   <property name="statusTip">
+    <string>了解财务概况信息</string>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+  </action>
+  <action name="action_charge">
+   <property name="icon">
+    <iconset>
+     <normaloff>:/icon/res/charge.png</normaloff>:/icon/res/charge.png</iconset>
+   </property>
+   <property name="text">
+    <string>记一笔</string>
+   </property>
+   <property name="statusTip">
+    <string>开始记账</string>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+N</string>
+   </property>
+  </action>
+  <action name="action_account">
+   <property name="text">
+    <string>账户</string>
+   </property>
+  </action>
+  <action name="action_report">
+   <property name="text">
+    <string>报表</string>
+   </property>
+   <property name="statusTip">
+    <string>各种报表数据</string>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+  </action>
+  <action name="action_classification_setting_out">
+   <property name="text">
+    <string>支出分类设置</string>
+   </property>
+   <property name="statusTip">
+    <string>记账科目设置</string>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+  </action>
+  <action name="action_account_setting">
+   <property name="text">
+    <string>账户设置</string>
+   </property>
+   <property name="statusTip">
+    <string>用户账户设置</string>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+  </action>
+  <action name="action_pwd_setting">
+   <property name="text">
+    <string>密码设置</string>
+   </property>
+   <property name="statusTip">
+    <string>密码设置（可选）</string>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+  </action>
+  <action name="action_classification_setting_in">
+   <property name="text">
+    <string>收入分类设置</string>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+  </action>
+  <action name="action_flow">
+   <property name="text">
+    <string>收支流水</string>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

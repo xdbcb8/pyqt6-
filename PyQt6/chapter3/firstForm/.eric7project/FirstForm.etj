@@ -1,0 +1,23 @@
+{
+  "header": {
+    "comment": "eric tasks file for project FirstForm",
+    "warning": "This file was generated automatically, do not edit.",
+    "saved": "2023-04-11, 18:53:14"
+  },
+  "ProjectScanFilter": "",
+  "Tasks": [
+    {
+      "summary": "WARNING: Any manual changes made to this file will be lost when pyuic6 is",
+      "description": "",
+      "priority": 1,
+      "lineno": 5,
+      "completed": false,
+      "created": 1681210040.435251,
+      "type": 2,
+      "uid": "{c2a06ec0-a157-4b8d-962a-6b08f71e0737}",
+      "parent_uid": "",
+      "expanded": false,
+      "filename": "C:\\Users\\Administrator\\Desktop\\firstForm\\Ui_firstUI.py"
+    }
+  ]
+}

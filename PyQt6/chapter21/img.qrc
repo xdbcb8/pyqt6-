@@ -1,0 +1,12 @@
+<RCC>
+  <qresource prefix="image">
+    <file>res/back.ico</file>
+    <file>res/forward.ico</file>
+    <file>res/home.png</file>
+    <file>res/new.ico</file>
+    <file>res/new.png</file>
+    <file>res/reload.ico</file>
+    <file>res/start.ico</file>
+    <file>res/stop.ico</file>
+  </qresource>
+</RCC>

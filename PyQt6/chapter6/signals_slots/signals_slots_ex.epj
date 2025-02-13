@@ -1,0 +1,99 @@
+{
+  "header": {
+    "comment": "eric project file for project signals_slots_ex",
+    "copyright": "Copyright (C) 2023 , ",
+    "saved": "2023-05-17, 17:30:01"
+  },
+  "project": {
+    "AUTHOR": "",
+    "CHECKERSPARMS": {},
+    "DESCRIPTION": "",
+    "DOCSTRING": "",
+    "DOCUMENTATIONPARMS": {},
+    "EMAIL": "",
+    "EMBEDDED_VENV": false,
+    "EOL": 0,
+    "FILETYPES": {
+      "*.cfg": "OTHERS",
+      "*.e4p": "OTHERS",
+      "*.epj": "OTHERS",
+      "*.ini": "OTHERS",
+      "*.json": "OTHERS",
+      "*.md": "OTHERS",
+      "*.py": "SOURCES",
+      "*.py3": "SOURCES",
+      "*.pyw": "SOURCES",
+      "*.pyw3": "SOURCES",
+      "*.qm": "TRANSLATIONS",
+      "*.rst": "OTHERS",
+      "*.toml": "OTHERS",
+      "*.ts": "TRANSLATIONS",
+      "*.txt": "OTHERS",
+      "*.ui": "FORMS",
+      "*.yaml": "OTHERS",
+      "*.yml": "OTHERS",
+      "GNUmakefile": "OTHERS",
+      "Makefile": "OTHERS",
+      "README": "OTHERS",
+      "README.*": "OTHERS",
+      "makefile": "OTHERS"
+    },
+    "FORMS": [
+      "ui.ui"
+    ],
+    "HASH": "d9ac4633c081235cff53f4a4226286c8d06d9bbb",
+    "IDLPARAMS": {
+      "DefinedNames": [],
+      "IncludeDirs": [],
+      "UndefinedNames": []
+    },
+    "LEXERASSOCS": {},
+    "LICENSE": "",
+    "MAINSCRIPT": "",
+    "MAKEPARAMS": {
+      "MakeEnabled": false,
+      "MakeExecutable": "",
+      "MakeFile": "",
+      "MakeParameters": "",
+      "MakeTarget": "",
+      "MakeTestOnly": true
+    },
+    "MIXEDLANGUAGE": false,
+    "OTHERS": [],
+    "OTHERTOOLSPARMS": {},
+    "PACKAGERSPARMS": {},
+    "PROGLANGUAGE": "Python3",
+    "PROJECTTYPE": "PyQt6",
+    "PROJECTTYPESPECIFICDATA": {},
+    "RCCPARAMS": {
+      "CompressLevel": 0,
+      "CompressionDisable": false,
+      "CompressionThreshold": 70,
+      "PathPrefix": ""
+    },
+    "RESOURCES": [],
+    "SOURCES": [
+      "Ui_ui.py",
+      "__init__.py",
+      "uiFunction.py"
+    ],
+    "SPELLEXCLUDES": "",
+    "SPELLLANGUAGE": "en_US",
+    "SPELLWORDS": "",
+    "TESTING_FRAMEWORK": "",
+    "TRANSLATIONEXCEPTIONS": [],
+    "TRANSLATIONPATTERN": "",
+    "TRANSLATIONS": [],
+    "TRANSLATIONSBINPATH": "",
+    "TRANSLATIONSOURCESTARTPATH": "",
+    "UICPARAMS": {
+      "Package": "",
+      "PackagesRoot": "",
+      "RcSuffix": ""
+    },
+    "VCS": "None",
+    "VCSOPTIONS": {},
+    "VCSOTHERDATA": {},
+    "VERSION": "0.1"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "header": {
+    "comment": "eric tasks file for project webBrowser",
+    "warning": "This file was generated automatically, do not edit.",
+    "saved": "2023-12-07, 18:17:23"
+  },
+  "ProjectScanFilter": "",
+  "Tasks": [
+    {
+      "summary": "WARNING: Any manual changes made to this file will be lost when pyuic6 is",
+      "description": "",
+      "priority": 1,
+      "lineno": 5,
+      "completed": false,
+      "created": 1701940720.7899897,
+      "type": 2,
+      "uid": "{05359095-a93b-42b3-ab3a-33835d3dc0d8}",
+      "parent_uid": "",
+      "expanded": false,
+      "filename": "D:\\onedrive\\document\\PythonDocument\\PyQt6ToImprovement\\ArticleMaterial\\PyQt6\\chapter21\\Ui_main.py"
+    }
+  ]
+}

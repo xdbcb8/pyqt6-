@@ -1,0 +1,99 @@
+{
+  "header": {
+    "comment": "eric project file for project webBrowser",
+    "copyright": "Copyright (C) 2023 , ",
+    "saved": "2023-12-01, 18:10:33"
+  },
+  "project": {
+    "AUTHOR": "",
+    "CHECKERSPARMS": {},
+    "DESCRIPTION": "",
+    "DOCSTRING": "",
+    "DOCUMENTATIONPARMS": {},
+    "EMAIL": "",
+    "EMBEDDED_VENV": false,
+    "EOL": 0,
+    "FILETYPES": {
+      "*.cfg": "OTHERS",
+      "*.e4p": "OTHERS",
+      "*.epj": "OTHERS",
+      "*.ini": "OTHERS",
+      "*.json": "OTHERS",
+      "*.md": "OTHERS",
+      "*.py": "SOURCES",
+      "*.py3": "SOURCES",
+      "*.pyw": "SOURCES",
+      "*.pyw3": "SOURCES",
+      "*.qm": "TRANSLATIONS",
+      "*.rst": "OTHERS",
+      "*.toml": "OTHERS",
+      "*.ts": "TRANSLATIONS",
+      "*.txt": "OTHERS",
+      "*.ui": "FORMS",
+      "*.yaml": "OTHERS",
+      "*.yml": "OTHERS",
+      "GNUmakefile": "OTHERS",
+      "Makefile": "OTHERS",
+      "README": "OTHERS",
+      "README.*": "OTHERS",
+      "makefile": "OTHERS"
+    },
+    "FORMS": [
+      "main.ui"
+    ],
+    "HASH": "bbbc1997830007c50d59eb7cccbbd27f8722c543",
+    "IDLPARAMS": {
+      "DefinedNames": [],
+      "IncludeDirs": [],
+      "UndefinedNames": []
+    },
+    "LEXERASSOCS": {},
+    "LICENSE": "",
+    "MAINSCRIPT": "",
+    "MAKEPARAMS": {
+      "MakeEnabled": false,
+      "MakeExecutable": "",
+      "MakeFile": "",
+      "MakeParameters": "",
+      "MakeTarget": "",
+      "MakeTestOnly": true
+    },
+    "MIXEDLANGUAGE": false,
+    "OTHERS": [],
+    "OTHERTOOLSPARMS": {},
+    "PACKAGERSPARMS": {},
+    "PROGLANGUAGE": "Python3",
+    "PROJECTTYPE": "PyQt6",
+    "PROJECTTYPESPECIFICDATA": {},
+    "RCCPARAMS": {
+      "CompressLevel": 0,
+      "CompressionDisable": false,
+      "CompressionThreshold": 70,
+      "PathPrefix": ""
+    },
+    "RESOURCES": [],
+    "SOURCES": [
+      "Ui_main.py",
+      "__init__.py",
+      "mainFunction.py"
+    ],
+    "SPELLEXCLUDES": "",
+    "SPELLLANGUAGE": "en_US",
+    "SPELLWORDS": "",
+    "TESTING_FRAMEWORK": "",
+    "TRANSLATIONEXCEPTIONS": [],
+    "TRANSLATIONPATTERN": "",
+    "TRANSLATIONS": [],
+    "TRANSLATIONSBINPATH": "",
+    "TRANSLATIONSOURCESTARTPATH": "",
+    "UICPARAMS": {
+      "Package": "",
+      "PackagesRoot": "",
+      "RcSuffix": ""
+    },
+    "VCS": "None",
+    "VCSOPTIONS": {},
+    "VCSOTHERDATA": {},
+    "VERSION": "0.1"
+  }
+}

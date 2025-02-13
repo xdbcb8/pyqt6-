@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>430</width>
+    <height>481</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>QWidget简单示例</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <layout class="QGridLayout" name="gridLayout_3">
+     <item row="7" column="0" colspan="2">
+      <widget class="QGroupBox" name="groupBox">
+       <property name="title">
+        <string>窗体Flags</string>
+       </property>
+       <layout class="QGridLayout" name="gridLayout">
+        <item row="13" column="1">
+         <widget class="QRadioButton" name="radioButtonWindowStaysOnBottom">
+          <property name="text">
+           <string>Window StaysOnBottom</string>
+          </property>
+         </widget>
+        </item>
+        <item row="11" column="1">
+         <widget class="QRadioButton" name="radioButtonWindowShadeButton">
+          <property name="text">
+           <string>Window ShadeButton</string>
+          </property>
+         </widget>
+        </item>
+        <item row="9" column="1">
+         <widget class="QRadioButton" name="radioButtonWindowCloseButton">
+          <property name="text">
+           <string>Window CloseButton</string>
+          </property>
+         </widget>
+        </item>
+        <item row="12" column="0">
+         <widget class="QRadioButton" name="radioButtonWindowTitle">
+          <property name="text">
+           <string>Window Title</string>
+          </property>
+         </widget>
+        </item>
+        <item row="7" column="0">
+         <widget class="QRadioButton" name="radioButtonSplashScreen">
+          <property name="text">
+           <string>Splash Screen</string>
+          </property>
+         </widget>
+        </item>
+        <item row="9" column="0">
+         <widget class="QRadioButton" name="radioButtonX11BypassWindowManager">
+          <property name="text">
+           <string>X11 Bypass Window Manager</string>
+          </property>
+         </widget>
+        </item>
+        <item row="10" column="1">
+         <widget class="QRadioButton" name="radioButtonWindowContextHelpButton">
+          <property name="text">
+           <string>Window ContextHelpButton</string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="0">
+         <widget class="QRadioButton" name="radioButtonWindow">
+          <property name="text">
+           <string>Window</string>
+          </property>
+         </widget>
+        </item>
+        <item row="12" column="1">
+         <widget class="QRadioButton" name="radioButtonWindowStaysOnTop">
+          <property name="text">
+           <string>Window StaysOnTop</string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="1">
+         <widget class="QRadioButton" name="radioButtonPopup">
+          <property name="text">
+           <string>Popup</string>
+          </property>
+         </widget>
+        </item>
+        <item row="10" column="0">
+         <widget class="QRadioButton" name="radioButtonFramelessWindow">
+          <property name="text">
+           <string>Frameless Window</string>
+          </property>
+         </widget>
+        </item>
+        <item row="13" column="0">
+         <widget class="QRadioButton" name="radioButtonWindowSystemMenu">
+          <property name="text">
+           <string>Window SystemMenu</string>
+          </property>
+         </widget>
+        </item>
+        <item row="6" column="0">
+         <widget class="QRadioButton" name="radioButtonSheet">
+          <property name="text">
+           <string>Sheet</string>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="1">
+         <widget class="QRadioButton" name="radioButtonTool">
+          <property name="text">
+           <string>Tool</string>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="0">
+         <widget class="QRadioButton" name="radioButtonDialog">
+          <property name="text">
+           <string>Dialog</string>
+          </property>
+         </widget>
+        </item>
+        <item row="11" column="0">
+         <widget class="QRadioButton" name="radioButtonWindowNoShadow">
+          <property name="text">
+           <string>Window NoShadow</string>
+          </property>
+         </widget>
+        </item>
+        <item row="8" column="0">
+         <widget class="QRadioButton" name="radioButtonMsWindowsFixedSizeDialog">
+          <property name="text">
+           <string>Ms Windows Fixed Size Dialog</string>
+          </property>
+         </widget>
+        </item>
+        <item row="8" column="1">
+         <widget class="QRadioButton" name="radioButtonWindowMaximizeButton">
+          <property name="text">
+           <string>Window MaximizeButton</string>
+          </property>
+         </widget>
+        </item>
+        <item row="6" column="1">
+         <widget class="QRadioButton" name="radioButtonToolTip">
+          <property name="text">
+           <string>ToolTip</string>
+          </property>
+         </widget>
+        </item>
+        <item row="14" column="0">
+         <widget class="QRadioButton" name="radioButtonWindowMinimizeButton">
+          <property name="text">
+           <string>Window MinimizeButton</string>
+          </property>
+         </widget>
+        </item>
+        <item row="14" column="1">
+         <widget class="QRadioButton" name="radioButtonCustomizeWindowHint">
+          <property name="text">
+           <string>Customize WindowHint</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </item>
+     <item row="6" column="1">
+      <widget class="QSlider" name="horizontalSliderTransparency">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="maximum">
+        <number>10</number>
+       </property>
+       <property name="singleStep">
+        <number>1</number>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="0">
+      <widget class="QLabel" name="label_2">
+       <property name="text">
+        <string>窗体的透明度</string>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="1">
+      <widget class="QGroupBox" name="groupBox_3">
+       <property name="title">
+        <string>图标样式</string>
+       </property>
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <item>
+         <widget class="QRadioButton" name="radioButton_icon1">
+          <property name="text">
+           <string>样式1</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QRadioButton" name="radioButton_icon2">
+          <property name="text">
+           <string>样式2</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QRadioButton" name="radioButton_icon3">
+          <property name="text">
+           <string>样式3</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </item>
+     <item row="5" column="0">
+      <widget class="QLabel" name="label">
+       <property name="text">
+        <string>窗体图标</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="0">
+      <widget class="QLabel" name="label_3">
+       <property name="text">
+        <string>窗体标题</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="1">
+      <widget class="QLineEdit" name="lineEditTitle">
+       <property name="clearButtonEnabled">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="img.qrc"/>
+ </resources>
+ <connections/>
+</ui>

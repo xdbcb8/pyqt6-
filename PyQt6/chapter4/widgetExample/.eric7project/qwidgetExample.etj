@@ -1,0 +1,23 @@
+{
+  "header": {
+    "comment": "eric tasks file for project qwidgetExample",
+    "warning": "This file was generated automatically, do not edit.",
+    "saved": "2023-04-16, 19:08:00"
+  },
+  "ProjectScanFilter": "",
+  "Tasks": [
+    {
+      "summary": "WARNING: Any manual changes made to this file will be lost when pyuic6 is",
+      "description": "",
+      "priority": 1,
+      "lineno": 5,
+      "completed": false,
+      "created": 1681642955.9741192,
+      "type": 2,
+      "uid": "{cb4d720a-cd9e-4288-ba42-59cd7c5a169f}",
+      "parent_uid": "",
+      "expanded": false,
+      "filename": "D:\\onedrive\\\u6587\u6863\\Python\u6280\u672f\u6587\u6863\\PyQt6\u4ece\u5165\u95e8\u5230\u63d0\u9ad8\\\u7d20\u6750\\PyQt6\\chapter4\\widgetExample\\Ui_widgetExample.py"
+    }
+  ]
+}

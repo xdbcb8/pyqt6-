@@ -1,0 +1,23 @@
+{
+  "header": {
+    "comment": "eric tasks file for project signals_slots_ex",
+    "warning": "This file was generated automatically, do not edit.",
+    "saved": "2024-06-20, 16:13:57"
+  },
+  "ProjectScanFilter": "",
+  "Tasks": [
+    {
+      "summary": "WARNING: Any manual changes made to this file will be lost when pyuic6 is",
+      "description": "",
+      "priority": 1,
+      "lineno": 5,
+      "completed": false,
+      "created": 1718870869.5719144,
+      "type": 2,
+      "uid": "{7dd8b049-0f8c-44ad-934c-f9877108fff0}",
+      "parent_uid": "",
+      "expanded": false,
+      "filename": "D:\\onedrive\\document\\PythonDocument\\PyQt6ToImprovement\\ArticleMaterial\\PyQt6\\chapter6\\signals_slots\\Ui_ui.py"
+    }
+  ]
+}

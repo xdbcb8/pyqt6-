@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="res.qrc">
+    <normaloff>:/icon/menuIcon/Title.png</normaloff>:/icon/menuIcon/Title.png</iconset>
+  </property>
+  <property name="statusTip">
+   <string>这是一个工具</string>
+  </property>
+  <widget class="QWidget" name="centralWidget"/>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu_F">
+    <property name="title">
+     <string>文件(&amp;F)</string>
+    </property>
+    <widget class="QMenu" name="menu">
+     <property name="title">
+      <string>保存方式</string>
+     </property>
+     <addaction name="action_S"/>
+     <addaction name="action_A"/>
+    </widget>
+    <addaction name="action_O"/>
+    <addaction name="separator"/>
+    <addaction name="action_N"/>
+    <addaction name="separator"/>
+    <addaction name="menu"/>
+    <addaction name="separator"/>
+    <addaction name="action_E"/>
+   </widget>
+   <widget class="QMenu" name="menu_S">
+    <property name="title">
+     <string>设置(S)</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menu_A">
+    <property name="title">
+     <string>关于(&amp;A)</string>
+    </property>
+   </widget>
+   <addaction name="menu_F"/>
+   <addaction name="menu_S"/>
+   <addaction name="menu_A"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar">
+   <property name="statusTip">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <property name="toolButtonStyle">
+    <enum>Qt::ToolButtonIconOnly</enum>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="action_O"/>
+   <addaction name="action_N"/>
+   <addaction name="action_E"/>
+   <addaction name="action_S"/>
+  </widget>
+  <action name="action_O">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/icon/menuIcon/open.png</normaloff>:/icon/menuIcon/open.png</iconset>
+   </property>
+   <property name="text">
+    <string>打开(&amp;O)</string>
+   </property>
+   <property name="statusTip">
+    <string/>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+O</string>
+   </property>
+  </action>
+  <action name="action_N">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/icon/menuIcon/new.png</normaloff>:/icon/menuIcon/new.png</iconset>
+   </property>
+   <property name="text">
+    <string>新建(&amp;N)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+N</string>
+   </property>
+  </action>
+  <action name="action_E">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/icon/menuIcon/exit.png</normaloff>:/icon/menuIcon/exit.png</iconset>
+   </property>
+   <property name="text">
+    <string>关闭(&amp;E)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+E</string>
+   </property>
+  </action>
+  <action name="action_S">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/icon/menuIcon/save.png</normaloff>:/icon/menuIcon/save.png</iconset>
+   </property>
+   <property name="text">
+    <string>保存(&amp;S)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
+  </action>
+  <action name="action_A">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/icon/menuIcon/saveas.png</normaloff>:/icon/menuIcon/saveas.png</iconset>
+   </property>
+   <property name="text">
+    <string>另存为(&amp;A)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+S</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="res.qrc"/>
+ </resources>
+ <connections/>
+</ui>
