@@ -312,6 +312,11 @@ class FriendTree(QTreeView):
         返回好友在列表中的索引
         hituser：好友
         """
-        for index, u in enumerate(self.userslist):
-            if u["username"] == hituser:
-                return index
+        if isinstance(hituser, QStandardItem):
+            for index, u in enumerate(self.userslist):
+                if u["username"] == hituser.text():
+                    return index
+        elif isinstance(hituser, str):
+            for index, u in enumerate(self.userslist):
+                if u["username"] == hituser:
+                    return index
