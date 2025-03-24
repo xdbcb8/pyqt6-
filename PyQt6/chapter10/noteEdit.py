@@ -136,6 +136,14 @@ class NoteEdit(QMainWindow):
     def __init__(self):
         super().__init__()
         self.initUI()
+        self.clipboard = QGuiApplication.clipboard() # 剪贴板
+        self.clipboard.dataChanged.connect(self.check_clipboard)
+
+    def check_clipboard(self): # 检查剪贴板是否已内容，有的话启用可以粘贴的功能
+        if self.clipboard.mimeData().hasText():
+            self.pasteAct.setEnabled(True)
+        else:
+            self.pasteAct.setEnabled(False)
 
     def initUI(self):
         """
@@ -216,11 +224,12 @@ class NoteEdit(QMainWindow):
         editToolBar.addAction(copyAct)
         # 粘贴
         pasteIcon = QIcon("icon:paste.png")
-        pasteAct = QAction(pasteIcon, "粘贴(&P)", self)
-        pasteAct.setShortcuts(QKeySequence.StandardKey.Paste)
-        pasteAct.setStatusTip("粘贴粘贴板上的内容")
-        editMenu.addAction(pasteAct)
-        editToolBar.addAction(pasteAct)
+        self.pasteAct = QAction(pasteIcon, "粘贴(&P)", self)
+        self.pasteAct.setShortcuts(QKeySequence.StandardKey.Paste)
+        self.pasteAct.setStatusTip("粘贴粘贴板上的内容")
+        self.pasteAct.setEnabled(False)
+        editMenu.addAction(self.pasteAct)
+        editToolBar.addAction(self.pasteAct)
 
         # #####菜单--格式############
         formatMenu = self.menuBar().addMenu("格式(&O)")
@@ -275,7 +284,7 @@ class NoteEdit(QMainWindow):
         undoAct.triggered.connect(self.noteEdit.undo) # 撤销上一步
         cutAct.triggered.connect(self.noteEdit.cut) # 剪贴
         copyAct.triggered.connect(self.noteEdit.copy) # 复制
-        pasteAct.triggered.connect(self.noteEdit.paste) # 粘贴
+        self.pasteAct.triggered.connect(self.noteEdit.paste) # 粘贴
         lineWrappedAct.triggered.connect(self.setLineWrapped) # 换行
         fontAct.triggered.connect(self.setFont) # 字体
         zoomInAct.triggered.connect(self.noteEdit.zoomIn) # 放大

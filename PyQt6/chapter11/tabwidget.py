@@ -137,6 +137,14 @@ class TabNoteEdit(QMainWindow):
         super().__init__()
         self.initUI()
         self.newFile()
+        self.clipboard = QGuiApplication.clipboard() # 剪贴板
+        self.clipboard.dataChanged.connect(self.check_clipboard)
+
+    def check_clipboard(self): # 检查剪贴板是否已内容，有的话启用可以粘贴的功能
+        if self.clipboard.mimeData().hasText():
+            self.pasteAct.setEnabled(True)
+        else:
+            self.pasteAct.setEnabled(False)
 
     def initUI(self):
         """
@@ -219,6 +227,7 @@ class TabNoteEdit(QMainWindow):
         self.pasteAct = QAction(pasteIcon, "粘贴(&P)", self)
         self.pasteAct.setShortcuts(QKeySequence.StandardKey.Paste)
         self.pasteAct.setStatusTip("粘贴粘贴板上的内容")
+        self.pasteAct.setEnabled(False)
         editMenu.addAction(self.pasteAct)
         editToolBar.addAction(self.pasteAct)
 
