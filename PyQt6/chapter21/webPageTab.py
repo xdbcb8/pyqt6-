@@ -318,7 +318,7 @@ class BrowserTabWidget(QTabWidget):
             for rightIndex in range(tab_count - 1, index, -1):
                 self.closeTab(rightIndex)
         elif chosen_action == closeLeftTabs: # 关闭左侧标签
-            for leftIndex in range(0, index):
+            for leftIndex in range(index, -1, -1):
                 self.closeTab(leftIndex)
 
     def closeTab(self, index):
@@ -326,6 +326,7 @@ class BrowserTabWidget(QTabWidget):
         关闭标签
         index：索引
         """
+        print(self.webviewsList)
         if index >= 0 and self.count() > 1:
             webengineview = self.webviewsList[index]
             self.webviewsList.remove(webengineview)
