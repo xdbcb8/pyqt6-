@@ -1,1 +1,1 @@
-请先在MySQL中建立finance的数据库，然后使用finance_db.sql回复数据库中的数据
+请先在MySQL中建立finance的数据库，然后使用finance_db.sql恢复数据库中的数据
