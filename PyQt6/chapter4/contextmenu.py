@@ -33,8 +33,10 @@ class contextMenu(QMainWindow):
         menuBar.addMenu("文件(&F)")
         menuBar.addMenu("设置(&S)")
         menuBar.addMenu("关于(&A)")
-        self.checkAct = QAction("未勾选", self)
-        self.checkAct.setCheckable(True)
+
+        self.checkAct = QAction("未勾选", self) # 勾选状态
+        self.checkAct.setCheckable(True) # 可勾选
+
         self.show()
 
     def contextMenuEvent(self, event):
@@ -46,6 +48,9 @@ class contextMenu(QMainWindow):
         saveAct = QAction(QIcon("icon:save.png"), "保存", self)
         exitAct = QAction(QIcon("icon:exit.png"), "退出", self)
         contextMenu.addActions([newAct, saveAct, exitAct, self.checkAct])
+        # 在鼠标右键点击位置显示上下文菜单并获取用户选择的动作
+        # mapToGlobal()将鼠标事件的本地坐标转换为全局屏幕坐标
+        # exec()方法显示菜单并阻塞等待用户选择，返回用户选择的动作对象
         action = contextMenu.exec(self.mapToGlobal(event.pos()))
         if action == exitAct:
             QApplication.instance().quit() # 退出
