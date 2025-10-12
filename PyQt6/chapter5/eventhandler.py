@@ -16,14 +16,27 @@ from PyQt6.QtCore import Qt
 class diyCheckBox(QCheckBox):
     def __init__(self, parent=None):
         super().__init__(parent=parent)
-    
+        
+    # 这是以前的写法，书上用的是这个例子
+    # def mousePressEvent(self, event):
+        # """让鼠标右键也能够勾选复选框"""
+        # if event.button() == Qt.MouseButton.RightButton:
+            # if self.checkState() == Qt.CheckState.Unchecked:
+                # self.setChecked(True)
+            # elif self.checkState() == Qt.CheckState.Checked:
+                # self.setChecked(False)
+            # self.setText("单击我的是鼠标右键")
+        # else:
+            # super().mousePressEvent(event)
+            # self.setText("单击我的是鼠标左键")    
+            
+    # 这是修改后的写法，更加简练
     def mousePressEvent(self, event):
-        """让鼠标右键也能够勾选复选框"""
+        """
+        让鼠标右键也能够勾选复选框
+        """
         if event.button() == Qt.MouseButton.RightButton:
-            if self.checkState() == Qt.CheckState.Unchecked:
-                self.setChecked(True)
-            elif self.checkState() == Qt.CheckState.Checked:
-                self.setChecked(False)
+            self.setChecked(not self.isChecked())
             self.setText("单击我的是鼠标右键")
         else:
             super().mousePressEvent(event)
