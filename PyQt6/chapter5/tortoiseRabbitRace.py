@@ -8,10 +8,15 @@
 @微信公众号: 学点编程吧
 '''
 # 龟兔赛跑
+# 完整程序位于本书配套资料的PyQt6\chapter5\tortoiseRabbitRace.py中
 
 import sys
+import os
 from PyQt6.QtWidgets import QApplication, QWidget, QLabel, QMessageBox
 from PyQt6.QtCore import Qt
+from PyQt6.QtGui import QPixmap
+
+current_dir = os.path.dirname(os.path.abspath(__file__))
 
 class Track(QWidget):
     def __init__(self):
@@ -22,10 +27,23 @@ class Track(QWidget):
     def initUI(self):
         self.setWindowTitle("龟兔赛跑")
         self.setFixedSize(500, 150)  # 赛道的窗体固定为500×150 px
-        self.tortoise = QLabel("<b>乌龟</b>", self)
-        self.rabbit = QLabel("<b>兔子</b>", self)
-        self.tortoise.setGeometry(self.xt, 20, 30, 30)  # 乌龟的起始位置
-        self.rabbit.setGeometry(self.xr, 80, 30, 30)  # 兔子的起始位置
+
+        # 以前的代码，显示的是乌龟和兔子的文字
+        # self.tortoise = QLabel("<b>乌龟</b>", self)
+        # self.rabbit = QLabel("<b>兔子</b>", self)
+        # self.tortoise.setGeometry(self.xt, 20, 30, 30)  # 乌龟的起始位置
+        # self.rabbit.setGeometry(self.xr, 80, 30, 30)  # 兔子的起始位置
+
+        # 创建乌龟和兔子的图片显示
+        self.tortoise = QLabel(self)
+        self.rabbit = QLabel(self)
+        self.tortoise.setPixmap(QPixmap(f'{current_dir}\\tortoise.png'))
+        self.rabbit.setPixmap(QPixmap(f'{current_dir}\\rabbit.png'))
+
+        # 设置位置
+        self.tortoise.move(self.xt, 0)  # 乌龟的起始位置
+        self.rabbit.move(self.xr, 70)  # 兔子的起始位置
+        
         self.show()
 
     def running(self, runner):
@@ -35,18 +53,18 @@ class Track(QWidget):
         """
         if runner == self.tortoise:
             self.xt += 30 # 乌龟每次移动的x坐标增加30px
-            runner.move(self.xt, 20)
+            runner.move(self.xt, 0)
         else:
             self.xr += 30
-            runner.move(self.xr, 80)
+            runner.move(self.xr, 70)
 
     def resetMatch(self):
         """
         重置比赛
         """
         self.xt, self.xr = 0, 0
-        self.tortoise.move(self.xt, 20)  # 乌龟的起始位置
-        self.rabbit.move(self.xr, 80)  # 兔子的起始位置
+        self.tortoise.move(self.xt, 0)  # 乌龟的起始位置
+        self.rabbit.move(self.xr, 70)  # 兔子的起始位置
 
     def matchResults(self):
         """
