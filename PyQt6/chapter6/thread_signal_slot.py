@@ -8,6 +8,7 @@
 @微信公众号:  学点编程吧
 '''
 # 跨线程的信号与槽方法使用
+# 完整程序位于本书配套资料的PyQt6\chapter6\thread_signal_slot.py中
 
 import sys
 import time
@@ -19,7 +20,7 @@ class Worker(QThread):
     progress = pyqtSignal(int)
 
     def run(self):
-        for i in range(101):
+        for i in range(1000):
             time.sleep(0.1)
             self.progress.emit(i)
         self.finished.emit()
@@ -32,7 +33,7 @@ class myWindow(QWidget):
     def initUI(self):
         self.resize(200, 100)
         self.setWindowTitle("跨线程信号与槽")
-        self.label = QLabel(f"当前进度：0%", self)
+        self.label = QLabel(f"当前进度：0", self)
         self.button = QPushButton("启动")
         self.button.clicked.connect(self.begin)
 
@@ -55,7 +56,7 @@ class myWindow(QWidget):
         '''
         显示线程当前工作进度
         '''
-        self.label.setText(f"当前进度：{value}%")
+        self.label.setText(f"当前进度：{value}")
             
     def finishWork(self):
         '''
@@ -68,9 +69,12 @@ class myWindow(QWidget):
         """
         子进程进行中则忽略关闭事件
         """
-        if self.worker.isRunning():
-            QMessageBox.information(self, "提示", "进程仍在进行中！")
-            event.ignore()
+        if hasattr(self, 'worker'): 
+            if self.worker.isRunning():
+                QMessageBox.information(self, "提示", "进程仍在进行中！")
+                event.ignore()
+        else:
+            event.accept()
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)
